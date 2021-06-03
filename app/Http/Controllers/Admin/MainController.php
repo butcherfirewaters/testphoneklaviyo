@@ -40,13 +40,15 @@ class MainController extends Controller
 
         //$client->lists->createList('MyList'); //тут желательно дать пользователю создавать Листы
 
-        //$arrayOfProfiles = Contact::find('2')->first()->toArray();
+        $arrayOfProfiles = Contact::find('2')->first()->toArray();
 
         $profile = array(
             new KlaviyoProfile(
                 array(
+                    '$id' => '1',
                     '$email' => "dan@divinusinc.com",
-                    '$first_name' => "Test"
+                    '$first_name' => "Test",
+                    '$phone_number' => '0972226632'
                 )));
 
         $client->lists->addMembersToList( 'Preview List ', $profile );

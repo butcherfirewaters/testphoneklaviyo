@@ -6,6 +6,8 @@
             {{session('success')}}
         </div>
     @endif
+
+
 <div class="container">
     <h1 style="text-align: center"><a href="{{route('admin.index')}}">Admin panel</a></h1>
     <div class="row">
@@ -23,6 +25,7 @@
         </div>
     </div>
 </div>
+
     @if(isset($contacts))
         <div class="container" style="margin: 20px auto">
             <table class="table table-striped">
